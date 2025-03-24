@@ -14,15 +14,11 @@ public class main {
     private static Dialog dialog;
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); 
-        System.out.print("Digite o nome da comida: ");
-        String x = scanner.nextLine(); 
-        System.out.println(x);
-        dialog = new Doce(); 
-        Comida p = dialog.createFood(); 
+
+        dialog = new Doce();
+        Comida p = dialog.createFood();
         System.out.println(p.QualTipo());
-        
+
     }
 
-  
 }
